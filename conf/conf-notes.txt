@@ -1,0 +1,5 @@
+Example targets:
+  bitbake flutter-bolt-image          # no multi config yet
+
+  bitbake mc:arm:flutter-bolt-image   # requires multi config
+
