@@ -1,6 +1,9 @@
 <manifest>
   <remote name="rdkcentral" fetch="https://github.com/rdkcentral/"/>
   <remote name="meta-flutter" fetch="https://github.com/meta-flutter/"/>
+  <remote name="clang" fetch="https://github.com/kraj/"/>
+
   <project remote="rdkcentral" name="meta-bolt-distro" upstream="develop" revision="c712c0b6bf9d947f1e7185b063ae993e36844c4d" path="bolt"/>
+  <project remote="clang" name="meta-clang" upstream="kirkstone-clang18" revision="ba32aef278cd7d0249cfe3c9e8319970f3018ff2" path="meta-clang"/>
   <project remote="meta-flutter" name="meta-flutter" upstream="kirkstone" revision="50593f4a16f5c7cc8d646bd34b54ea57a28df803" path="meta-flutter"/>
 </manifest>

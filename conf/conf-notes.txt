@@ -1,5 +1,8 @@
 Example targets:
-  bitbake flutter-bolt-image          # no multi config yet
+  bitbake flutter-runtime-bolt-image          # no multi config yet
 
-  bitbake mc:arm:flutter-bolt-image   # requires multi config
+  bitbake mc:arm:flutter-runtime-bolt-image  \
+  bitbake mc:arm64:flutter-runtime-bolt-image  \ 
+  bitbake mc:amd64:flutter-runtime-bolt-image  # requires multi config
+
 
