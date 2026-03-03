@@ -22,9 +22,9 @@ source setup-environment
 
 * Start building the flutter-runtime  image.
 ```
-bitbake flutter-runtime-bolt-image
+bitbake basic-flutter-3-38-3-runtime-bolt-image
 ```
-## Building flutter-runtime as bolt package! NOT READY YET
+## Building flutter-runtime as bolt package! 
 
 To create Bolt packages for Fluttere, ensure that the base package is available in the package store. Refer to the [building the base bolt package](https://github.com/rdkcentral/meta-bolt-distro?tab=readme-ov-file#building-the-base-bolt-package) section to generate the base package and set up the package store.
 
@@ -32,7 +32,8 @@ To create Bolt packages for Fluttere, ensure that the base package is available 
 Follow the same steps mentioned in the [Cobalt OCI image building instructions](#cobalt-oci-image-building-instructions) chapter to setup and build the Cobalt runtime, but instead of calling `bitbake cobalt-bolt-image`, use the [bolt tool](https://github.com/rdkcentral/bolt-tools/tree/main/bolt) to create bolt packages for Cobalt.
 
 ```
-bolt make flutter-runtime --install
+bolt make basicflutterruntime.v3_38_3 --install
+bolt make flutterhelloworld --install
 
 ```
 

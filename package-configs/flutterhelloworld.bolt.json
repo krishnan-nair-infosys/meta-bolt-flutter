@@ -1,0 +1,7 @@
+{
+  "config": "com.rdkcentral.flutterhelloworld.json",
+  "bitbake": {
+    "image": "flutter-hello-world-bolt-image"
+  }
+}
+
