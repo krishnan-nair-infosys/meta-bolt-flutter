@@ -1,6 +1,6 @@
 # meta-bolt-flutter
 
-Bitbake meta layer extending the **bolt** distro with recipes allowing to build flutter runtime (flutter engine + embedder) OCI artifact
+Bitbake meta layer extending the **bolt** distro and meta-flutter allowing to build flutter applications and flutter runtime (flutter engine + embedder) natively (AOT release mode) as separate OCI-artifacts in ralf format aka bolts 
 
 # Setup and building
 
@@ -22,7 +22,7 @@ source setup-environment
 
 * Start building the flutter-runtime  image.
 ```
-bitbake basic-flutter-3-38-3-runtime-bolt-image
+bitbake flutter-auto-3-38-3-runtime-bolt-image
 ```
 ## Building flutter-runtime as bolt package! 
 
@@ -32,15 +32,28 @@ To create Bolt packages for Fluttere, ensure that the base package is available 
 Follow the same steps mentioned in the [Cobalt OCI image building instructions](#cobalt-oci-image-building-instructions) chapter to setup and build the Cobalt runtime, but instead of calling `bitbake cobalt-bolt-image`, use the [bolt tool](https://github.com/rdkcentral/bolt-tools/tree/main/bolt) to create bolt packages for Cobalt.
 
 ```
-bolt make basicflutterruntime.v3_38_3 --install
-bolt make flutterhelloworld --install
+bolt make flutter.runtime.flutter-auto.v3_38_3 --install
 
 ```
+## Building flutter-application as bolt package! 
+
+Make sure you configured your the packageconfig of your application with right depedency on the exact flutter runtime and entryPoint
+See example [package-configs](https://github.com/stagingrdkm/meta-bolt-flutter/tree/develop/package-configs)
+
+```
+bolt make flutter.app.helloworld --install
+bolt make flutter.app.wonderous --install
+bolt make flutter.app.games.sample.multiplayer --install
+
+```
+
 
 ## Running flutter bolt packages on device ! NOT READY yet
 
 To run bolt packages on device, use `bolt push` and `bolt run` as explained in [bolt tool usage](https://github.com/rdkcentral/bolt-tools/tree/main/bolt#usage)
 
 ```
-bolt push <remote> TBD
+bolt push <sshuser@remoteip> <boltpackagename>
+bolt run <sshuser@remoteip> <boltpackagename>
+
 ```

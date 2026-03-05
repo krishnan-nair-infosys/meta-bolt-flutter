@@ -1,12 +1,12 @@
 {
-  "id": "com.rdkcentral.flutterhelloworld",
+  "id": "com.rdkcentral.flutter.app.wonderous",
   "version": "0.1.0",
   "versionName": "develop",
-  "name": "Flutter Hello World",
+  "name": "Wonderous",
   "packageType": "application",
-  "entryPoint": "/usr/share/flutter/flutter-samples-hello-world-app/3.38.3/release/lib/libapp.so",
+  "entryPoint": "/usr/share/flutter/gskinnerteam-flutter-wonderous-app-wonders/3.38.3/release/data/flutter_assets",
   "dependencies": {
-    "com.rdkcentral.basicflutterruntime.v3_38_3": "0.0.1"
+    "com.rdkcentral.flutter.runtime.flutter-auto.v3_38_3": "0.0.1"
   },
   "permissions": [
     "urn:rdk:permission:internet",

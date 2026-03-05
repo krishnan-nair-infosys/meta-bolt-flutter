@@ -1,10 +1,10 @@
 {
-  "id": "com.rdkcentral.basicflutterruntime.v3_38_3",
+  "id": "com.rdkcentral.flutter.runtime.flutter-auto.v3_38_3",
   "version": "0.0.1",
   "versionName": "develop",
-  "name": "BasicFlutterRuntimev3_38_3",
+  "name": "FlutterAutoRuntimev3_38_3",
   "packageType": "runtime",
-  "entryPoint": "/usr/bin/flutter-launcher-wayland",
+  "entryPoint": "/usr/bin/flutter-auto",
   "dependencies": {
     "com.rdkcentral.base": "0.1.0"
   },

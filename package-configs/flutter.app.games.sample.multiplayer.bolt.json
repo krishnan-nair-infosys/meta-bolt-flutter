@@ -1,0 +1,7 @@
+{
+  "config": "com.rdkcentral.flutter.app.games.sample.multiplayer.json",
+  "bitbake": {
+    "image": "flutter-games-samples-multiplayer-bolt-image"
+  }
+}
+
