@@ -44,5 +44,6 @@ IMAGE_CMD:oci:append() {
 }
 
 IMAGE_INSTALL += "flutter-hello-world"
-IMAGE_INSTALL += "flutter-basic-embedder"
+#IMAGE_INSTALL += "flutter-basic-embedder"
+IMAGE_INSTALL += "flutter-auto"
 IMAGE_INSTALL += "flutter-engine"
