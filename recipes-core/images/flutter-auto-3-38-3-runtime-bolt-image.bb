@@ -8,3 +8,6 @@ SUMMARY = "Flutter runtime bolt image"
 inherit base-bolt-image
 IMAGE_INSTALL += "flutter-engine"
 IMAGE_INSTALL += "flutter-auto"
+
+#need to add to solve flutter-auto runtime error: xkbcommon: ERROR: failed to add default include path /usr/share/X11/xkb
+IMAGE_INSTALL:append = " xkeyboard-config"
