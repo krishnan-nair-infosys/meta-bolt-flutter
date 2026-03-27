@@ -56,4 +56,8 @@ To run bolt packages on device, use `bolt push` and `bolt run` as explained in [
 bolt push <sshuser@remoteip> <boltpackagename>
 bolt run <sshuser@remoteip> <boltpackagename>
 
+bolt push <sshuser@remoteip> com.rdkcentral.flutter.runtime.flutter-auto.v3_38_3+0.0.1
+bolt push <sshuser@remoteip> com.rdkcentral.flutter.app.wonderous+0.1.0
+
+bolt run <sshuser@remoteip> com.rdkcentral.flutter.app.wonderous+0.1.0
 ```

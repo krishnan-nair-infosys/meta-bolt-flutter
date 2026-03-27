@@ -4,7 +4,7 @@
   "versionName": "develop",
   "name": "Flutter Game sample app",
   "packageType": "application",
-  "entryPoint": "/usr/share/flutter/flutter-games-samples-multiplayer/3.38.3/release/data/flutter_assets",
+  "entryPoint": "/usr/share/flutter/flutter-games-samples-multiplayer/3.38.3/release/",
   "dependencies": {
     "com.rdkcentral.flutter.runtime.flutter-auto.v3_38_3": "0.0.1"
   },
