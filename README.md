@@ -38,13 +38,11 @@ bolt make flutter.runtime.flutter-auto.v3_38_3 --install
 ## Building flutter-application as bolt package! 
 
 Make sure you configured your the packageconfig of your application with right depedency on the exact flutter runtime and entryPoint
-See example [package-configs](https://github.com/stagingrdkm/meta-bolt-flutter/tree/develop/package-configs)
+See example [package-configs](https://github.com/rdkcentral/meta-bolt-flutter/tree/develop/package-configs)
 
 ```
-bolt make flutter.app.helloworld --install
 bolt make flutter.app.wonderous --install
-bolt make flutter.app.games.sample.multiplayer --install
-
+bolt make flutter.app.helloworld --install
 ```
 
 
