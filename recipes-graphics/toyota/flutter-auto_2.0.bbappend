@@ -21,10 +21,13 @@ SRC_URI:remove = "gitsm://github.com/toyota-connected/ivi-homescreen-plugins.git
 # --- Remove the plugins license file reference (it lives inside the removed repo) ---
 LIC_FILES_CHKSUM:remove = "file://${S}/ivi-homescreen-plugins/LICENSE;md5=39ae29158ce710399736340c60147314"
 
-# --- Replace upstream ivi-homescreen repo with temp fork that adds simple-shell support
+# --- ivi-homescreen: local tree (Option 2b — file git, no push required)
+# Docker: $PWD (~/Videos/Flutter) is mounted at /workspace → repo at /workspace/bcatrysse-ivi-homescreen
+# Update HOMESCREEN_COMMIT after each local commit:
+#   git -C ~/Videos/Flutter/bcatrysse-ivi-homescreen rev-parse HEAD
 SRC_URI:remove = "gitsm://github.com/toyota-connected/ivi-homescreen.git;protocol=https;branch=v2.0;name=homescreen"
-SRC_URI:append = " gitsm://github.com/bcatrysse/ivi-homescreen.git;protocol=https;branch=v2.0_with_simple_shell;name=homescreen"
-HOMESCREEN_COMMIT = "1cded8b60f1e095aeb7fafadc199272594c14d94" 
+SRC_URI:append = " gitsm:///workspace/bcatrysse-ivi-homescreen;protocol=file;branch=keymap-backport;name=homescreen"
+HOMESCREEN_COMMIT = "d3d025fb71dc6753d2e0d15896e6cb7d01ff2df1"
 
 # --- Adding launcher script that allows to pass in right flutter launch app path coming from entryPoint in package-config of the separate app bolt package
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
