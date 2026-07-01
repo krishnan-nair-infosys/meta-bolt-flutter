@@ -2,16 +2,17 @@
 #
 SUMMARY = "key_mapping_validator"
 DESCRIPTION = "Flutter key mapping validation app for RDK devices"
-AUTHOR = "RDK"
-HOMEPAGE = "None"
-BUGTRACKER = "None"
+AUTHOR = "krishnan-nair-infosys"
+HOMEPAGE = "https://github.com/krishnan-nair-infosys/key_mapping_validator"
+BUGTRACKER = "https://github.com/krishnan-nair-infosys/key_mapping_validator/issues"
 SECTION = "graphics"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=421eabdde8ad31134feff02518f91a30"
 
-inherit externalsrc
-EXTERNALSRC = "/workspace/key_mapping_validator"
-S = "/workspace/key_mapping_validator"
+SRCREV = "391a6eb744fbff2d7d19410cbc9a05643cf225b3"
+SRC_URI = "git://github.com/krishnan-nair-infosys/key_mapping_validator.git;branch=main;protocol=https"
+
+S = "${WORKDIR}/git"
 
 PUBSPEC_APPNAME = "key_mapping_validator"
 FLUTTER_APPLICATION_INSTALL_SUFFIX = "flutter-key-mapping-validator"
