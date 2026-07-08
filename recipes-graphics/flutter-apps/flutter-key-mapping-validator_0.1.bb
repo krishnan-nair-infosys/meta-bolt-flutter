@@ -9,7 +9,7 @@ SECTION = "graphics"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=421eabdde8ad31134feff02518f91a30"
 
-SRCREV = "391a6eb744fbff2d7d19410cbc9a05643cf225b3"
+SRCREV = "b2ba4d6a1d0da424074c8cfaa8be5641bd81bdd2"
 SRC_URI = "git://github.com/krishnan-nair-infosys/key_mapping_validator.git;branch=main;protocol=https"
 
 S = "${WORKDIR}/git"
